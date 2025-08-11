@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+   
+}
+
+.container {
+    
+    padding: 30px;
+    border: 1px solid black;
+    width: 500px;           
+} 
+
+h5 {
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post img {
+    width: 60px;
+    height: 60px;
+    
+} 
+
+
+.title {
+    color: teal;
+    font-weight: bold;
+    
+}
+
+.author {
+    font-size: 14px;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
