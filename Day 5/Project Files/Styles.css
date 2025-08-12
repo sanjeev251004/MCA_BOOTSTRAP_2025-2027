@@ -1,0 +1,172 @@
+/* 
+h2 {
+       display: flex;
+       justify-content: center;
+      }
+
+
+.grid-container {
+    display: grid;
+     
+    gap: 5px; 
+  }
+
+  .sale-badge {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 3px;
+  
+  }
+
+article {
+    border: 1px solid black;
+    display: grid; 
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.cartingcontainer{
+    display: flex;
+    justify-content: center;
+   background-attachment: fixed;
+   background-color: black;
+}
+.cartcontainer{
+    color: white;
+    background: black;
+
+    
+}
+.colors{
+    display: flex;
+    gap: 10px;
+}
+.colorblack{
+    border: 1px solid black;
+    height: 10px;
+    width: 10px;
+    background-color: black;
+}
+.colorblue{
+    border: 1px solid black;
+    height: 10px;
+    width: 10px;
+    background-color: blue;
+
+}
+.colorred{
+    border: 1px solid black;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+
+} 
+
+
+ */
+
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+}
+
+.product-card {
+  background: white;
+  border: 2px solid #000;
+  border-radius: 8px;
+  width: 800px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.sale-badge {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  position: absolute;
+  top: -10px;
+  left: - 
+  
+  0px;
+  border-radius: 4px;
+}
+
+.product-card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.product-grid img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.colors {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.cart-row {
+  background-color: black; /* Fill the whole block */
+  padding: 20px; /* Space inside the black background */
+  text-align: center; /* Center the button */
+}
+
+.cart-btn {
+  background-color: black; /* Button background */
+  color: white; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background-color: #ddd; /* Optional hover effect */
+}
+

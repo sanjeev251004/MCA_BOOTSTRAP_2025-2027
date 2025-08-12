@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Code Magazine - HTML Article</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: white;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #f0f8f8;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #e2e2e2;
+    }
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: #0096c7;
+    }
+    header img {
+      height: 22px;
+      margin-right: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0096c7;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .my img {
+      position: absolute;
+      margin-right: 200px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* MAIN CONTENT LAYOUT */
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr; /* Article & Sidebar */
+      gap: 40px;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+      align-items: start;
+    }
+
+    /* ARTICLE */
+    .top-label {
+      background-color: #ffeb3b;
+      color: black;
+      font-weight: bold;
+      padding: 3px 8px;
+      font-size: 11px;
+      border-radius: 2px;
+      display: inline-block;
+      float: right;
+    }
+    h2 {
+      color: #0096c7;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    .author {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    .post-img {
+      max-width: 100%;
+      border-radius: 3px;
+      margin-bottom: 15px;
+    }
+    h3 {
+      color: #0096c7;
+      font-size: 20px;
+      margin-top: 25px;
+    }
+    a {
+      color: #0096c7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul, ol {
+      padding-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* SIDEBAR */
+    aside {
+      border: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    aside h4 {
+      color: #0096c7;
+      font-weight: bold;
+      font-size: 14px;
+      border-top: 3px solid #0096c7;
+      display: block;
+      padding-top: 5px;
+      margin-bottom: 15px;
+    }
+    .related {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .related-post {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .related-post img {
+      width: 80px;
+      height: 50px;
+      object-fit: cover;
+    }
+    .related-post small {
+      font-size: 12px;
+      color: gray;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: gray;
+      padding: 20px;
+      border-top: 1px solid black;
+      position: relative;
+    }
+
+    /* LIKE BUTTON */
+    .like-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 5px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .like-btn:hover {
+      background-color: #f0f0f0;
+    }
+    .like-btn span {
+      color: red;
+      font-size: 16px;
+    }
+
+    /* CONTAINER HELPERS */
+    .con {
+      display: flex;
+      align-items: center;
+    }
+    .cont {
+      display: flex;
+      align-items: center;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="cont">
+    <img class="my img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2GyGgxK_5vXUuOE9ZkSmExh_6N36d3xTlQ&s" alt="logo" />
+    <h1>THE CODE MAGAZINE</h1>
+  </div>
+  <nav>
+    <a href="/day4/blog.html">BLOG</a>
+    <a href="/day4/challenge2.html">Challenges</a>
+    <a href="/day4/flexbox.html">Flexbox</a>
+    <a href="/day4/grid.html">CSS Grid</a>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <span class="top-label">TOP</span>
+    <h2>The Basic Language of the Web: HTML</h2>
+    <div class="con">
+      <img src="img/laura-jones.jpg" alt="Logo" width="60px" />
+      <p class="author">Posted by Praveen on Monday, June 21st 2025</p>
+    </div>
+    <img src="img/post-img.jpg" width="auto" />
+
+    <p>
+      All modern websites and web applications are built using three
+      <strong>fundamental</strong> technologies: HTML, CSS and JavaScript.
+      These are the languages of the web.
+    </p>
+    <p>
+      In this post, let's focus on HTML. We will learn what HTML is all about,
+      and why you too should learn it.
+    </p>
+
+    <h3>What is HTML?</h3>
+    <p>
+      HTML stands for <strong>HyperText Markup Language</strong>. It's a
+      markup language that web developers use to structure and describe the
+      content of a webpage (not a programming language).
+    </p>
+    <p>
+      HTML consists of elements that describe different types of content:
+      paragraphs, links, headings, images, video, etc. Web browsers understand
+      HTML and render HTML code as websites.
+    </p>
+    <p>In HTML, each element is made up of 3 parts:</p>
+    <ol>
+      <li><strong>The opening tag</strong></li>
+      <li>The closing tag</li>
+      <li><em>The actual element</em></li>
+    </ol>
+    <p>You can learn more at <a href="#">MDN web docs</a>.</p>
+
+    <h3>Why should you learn HTML?</h3>
+    <p>
+      There are countless reasons for learning the fundamental language of the
+      web. Here are 5 of them:
+    </p>
+    <ul>
+      <li><strong>To be able to use the fundamental web dev language</strong></li>
+      <li>To hand-craft beautiful websites instead of relying on tools like Wordpress or Wix</li>
+      <li>To build web applications</li>
+      <li>To impress friends</li>
+      <li><em>To have fun 😃</em></li>
+    </ul>
+
+    <p>Hopefully you learned something new here. See you next time!</p>
+  </article>
+
+  <aside>
+    <h4>RELATED POSTS</h4>
+    <div class="related">
+      <div class="related-post">
+        <img src="img/related-1.jpg" alt="Related 1" />
+        <div>
+          <a href="#">How to Learn Web Development</a><br />
+          <small>By Praveen</small>
+        </div>
+      </div>
+      <div class="related-post">
+        <img src="img/related-2.jpg" alt="Related 2" />
+        <div>
+          <a href="#">The unknown Powers of CSS</a><br />
+          <small>By Elon</small>
+        </div>
+      </div>
+      <div class="related-post">
+        <img src="img/related-3.jpg" alt="Related 3" />
+        <div>
+          <a href="#">Why Javascript is Awesome</a><br />
+          <small>By Mark</small>
+        </div>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<footer>Copyright © 2027 by The Code Magazine.</footer>
+
+<button class="like-btn">Like <span>♥</span></button>
+
+</body>
+</html>
