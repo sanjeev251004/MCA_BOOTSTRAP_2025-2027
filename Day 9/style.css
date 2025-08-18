@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.player h2 {
+  margin-bottom: 10px;
+}
+
+.player img {
+  width: 100px;
+  height: 100px;
+}
+
+#result {
+  margin-top: 10px;
+  color: #444;
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: black;
+}
